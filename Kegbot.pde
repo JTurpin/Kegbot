@@ -49,7 +49,7 @@ void setup(void)
 {
    wdt_enable(WDTO_4S);
   //  Flow Meter stuff
-  pinMode(5, OUTPUT); // no fucking clue what I was doing here
+  pinMode(5, OUTPUT); // led output...work in progress
   attachInterrupt(0, count_beer1, RISING); // setup the interrupt for keg1 digital pin 2
   attachInterrupt(1, count_beer2, RISING); // setup the interrupt for keg2 digital pin 3
   //  END FLOW METER STUFF  //
